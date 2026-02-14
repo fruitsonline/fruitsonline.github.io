@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FreshCrate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+  <style>
+  /* This creates the specific angled shape for the price tag */
+  .clip-path-tag {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 85%);
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body class="bg-white container max-w-7xl mx-auto">
+  <!-- Navbar -->
+	<div class="">
+		<nav class="relative mx-auto py-5 flex justify-between items-center">
+		  
+		  <!-- Logo -->
+		  <div class="text-2xl font-bold">
+			<span class="text-green-600">Fruits</span>Online
+		  </div>
+
+		  <!-- Desktop Menu -->
+		  <ul class="hidden md:flex space-x-8 font-medium text-gray-700">
+			<li class="hover:text-green-600 cursor-pointer">Home</li>
+			<li class="hover:text-green-600 cursor-pointer">Products</li>
+			<li class="hover:text-green-600 cursor-pointer">About Us</li>
+			<li class="hover:text-green-600 cursor-pointer">Contact Us</li>
+		  </ul>
+
+		  <!-- Mobile Menu Icon -->
+		  <button id="menu-btn"  class="md:hidden text-2xl">☰</button>
+
+		  <!-- Mobile Menu -->
+		  <ul id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-md flex flex-col hidden text-gray-700 font-medium md:hidden z-50">
+			<li class="border-b px-6 py-3 hover:bg-gray-100 cursor-pointer">Home</li>
+			<li class="border-b px-6 py-3 hover:bg-gray-100 cursor-pointer">Crates Shop</li>
+			<li class="border-b px-6 py-3 hover:bg-gray-100 cursor-pointer">Past Crates</li>
+			<li class="border-b px-6 py-3 hover:bg-gray-100 cursor-pointer">Features</li>
+			<li class="border-b px-6 py-3 hover:bg-gray-100 cursor-pointer">Blog</li>
+			<li class="px-6 py-3 hover:bg-gray-100 cursor-pointer">Contact Us</li>
+		  </ul>
+		</nav>
+	</div>
+
+  <section class="bg-gray-100 mx-auto px-6 lg:px-16 py-10 lg:py-16">
+  
+    
+    <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+      
+      <!-- Left Content -->
+      <div class="lg:w-1/2 text-center lg:text-left">
+        
+        <h1 class="text-2xl md:text-3xl font-bold leading-tight text-gray-900">
+          Export-Quality Fresh Kinnows <br>
+          Straight to Your Door
+        </h1>
+
+		<ul class="space-y-2 text-gray-600 mt-6">
+			<li class="flex items-center justify-center md:justify-start space-x-2">
+			  <span class="text-green-600">✔</span>
+			  <span>100% Satisfaction Guarantee</span>
+			</li>
+			<li class="flex items-center justify-center md:justify-start space-x-2">
+			  <span class="text-green-600">✔</span>
+			  <span>World-Class Shaving Products</span>
+			</li>
+			<li class="flex items-center justify-center md:justify-start space-x-2">
+			  <span class="text-green-600">✔</span>
+			  <span>World-Class Shaving Products</span>
+			</li>
+		  </ul>
+
+        <button class="mt-8 inline-flex items-center gap-2 bg-[#6d7a5f] hover:bg-[#5a664f] 
+                       text-white font-medium px-6 py-3 shadow-md 
+                       transition duration-300">
+          Shop Now
+          <span class="text-xl">→</span>
+        </button>
+
+      </div>
+
+      <!-- Right Image -->
+      <div class="lg:w-1/2 flex justify-center">
+        <img 
+          src="https://images.unsplash.com/photo-1542838132-92c53300491e"
+          alt="Fresh Vegetables Basket"
+          class="w-full max-w-xl object-contain"
+        >
+      </div>
+
+    </div>
+
+  </section>
+  <div class="bg-white py-16 px-4 font-sans text-gray-700">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-light text-gray-800">
+      Get Box <span class="font-bold">Products Separately</span>
+    </h2>
+    <p class="text-gray-500 mt-2 text-lg">Subscribe to our month crates</p>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <div class="relative border border-gray-800 pt-8 pb-12 px-6 flex flex-col items-center group">
+      <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white px-4 tracking-widest text-sm font-medium"> 10KG Kinnow BOX</div>
+      <div class="absolute top-0 right-0 bg-[#e9e9e1] py-2 px-2 clip-path-tag text-center">
+        <div class="font-bold text-xl">2200 Rs</div>
+      </div>
+      <div class="h-48 flex items-center justify-center mb-6">
+        <img src="https://spadethemes.com/quickmart/wp-content/uploads/sites/6/2025/08/product-20-600x600.webp" style="height:180px" alt="Monthly Box" class="object-contain">
+      </div>
+      <div class="w-full text-center space-y-2 border-t border-gray-100 pt-6">
+        <p class="text-gray-500">Export-Quality Sargodha Kinnows</p>
+        <div class="border-t border-gray-100"></div>
+        <p class="text-gray-500">Premium Packing</p>
+        <div class="border-t border-gray-100"></div>
+        <p class="text-gray-500">Free Home Delivery</p>
+      </div>
+      <button class="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
+        Order Now
+      </button>
+    </div>
+	
+	<div class="relative border border-gray-800 pt-8 pb-12 px-6 flex flex-col items-center group">
+      <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white px-4 tracking-widest text-sm font-medium"> 5KG Kinnow BOX</div>
+      <div class="absolute top-0 right-0 bg-[#e9e9e1] py-2 px-2 clip-path-tag text-center">
+        <div class="font-bold text-xl">1500 Rs</div>
+      </div>
+      <div class="h-48 flex items-center justify-center mb-6">
+        <img src="https://www.shutterstock.com/shutterstock/photos/176051888/display_1500/stock-photo-orange-on-the-white-background-176051888.jpg" style="height:180px" alt="Monthly Box" class="object-contain">
+      </div>
+      <div class="w-full text-center space-y-2 border-t border-gray-100 pt-6">
+        <p class="text-gray-500">Export-Quality Sargodha Kinnows</p>
+        <div class="border-t border-gray-100"></div>
+        <p class="text-gray-500">Premium Packing</p>
+        <div class="border-t border-gray-100"></div>
+        <p class="text-gray-500">Free Home Delivery</p>
+      </div>
+      <button class="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
+        Order Now
+      </button>
+    </div>
+	
+	
+	<div class="relative border border-gray-800 pt-8 pb-12 px-6 flex flex-col items-center group">
+      <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white px-4 tracking-widest text-sm font-medium"> 5KG Kinnow BOX</div>
+      <div class="absolute top-0 right-0 bg-[#e9e9e1] py-2 px-2 clip-path-tag text-center">
+        <div class="font-bold text-xl">1500 Rs</div>
+      </div>
+      <div class="h-48 flex items-center justify-center mb-6">
+        <img src="https://www.shutterstock.com/shutterstock/photos/176051888/display_1500/stock-photo-orange-on-the-white-background-176051888.jpg" style="height:180px" alt="Monthly Box" class="object-contain">
+      </div>
+      <div class="w-full text-center space-y-2 border-t border-gray-100 pt-6">
+        <p class="text-gray-500">Export-Quality Sargodha Kinnows</p>
+        <div class="border-t border-gray-100"></div>
+        <p class="text-gray-500">Premium Packing</p>
+        <div class="border-t border-gray-100"></div>
+        <p class="text-gray-500">Free Home Delivery</p>
+      </div>
+      <button class="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
+        Order Now
+      </button>
+    </div>
+  </div>
+  
+</div>
+<div class="bg-[#fcfcfc] py-16 px-4 font-sans text-gray-700">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-light text-gray-800">
+      Fresh Posts From <span class="font-bold text-gray-900">The Garden</span>
+    </h2>
+    <p class="text-gray-500 mt-2 text-sm tracking-wide">Find TheCrate's News and Offers</p>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <div class="group cursor-pointer">
+      <div class="relative overflow-hidden mb-5">
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Fresh Monthly Box" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <div class="bg-white/20 p-4 rounded-full backdrop-blur-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-3">
+        <p class="text-[10px] tracking-[0.2em] text-gray-400 font-bold uppercase">March 3, 2025 | Fresh Crates</p>
+        <h3 class="text-lg font-bold text-gray-800 leading-tight">Build Your Own Fresh Monthly Box</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae feugiat magna,
+        </p>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="relative overflow-hidden mb-5">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80" alt="Crates Coming to Town" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <div class="bg-white/20 p-4 rounded-full backdrop-blur-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-3">
+        <p class="text-[10px] tracking-[0.2em] text-gray-400 font-bold uppercase">March 3, 2025 | Fresh Crates</p>
+        <h3 class="text-lg font-bold text-gray-800 leading-tight">Fresh Crates are Coming to Town</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae feugiat magna,
+        </p>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="relative overflow-hidden mb-5">
+        <img src="https://www.shutterstock.com/shutterstock/photos/176051888/display_1500/stock-photo-orange-on-the-white-background-176051888.jpg" alt="New Vegetables" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <div class="bg-white/20 p-4 rounded-full backdrop-blur-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-3">
+        <p class="text-[10px] tracking-[0.2em] text-gray-400 font-bold uppercase">March 3, 2025 | Fresh Crates</p>
+        <h3 class="text-lg font-bold text-gray-800 leading-tight">Open Up the Box, New Vegetables</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae feugiat magna,
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="bg-[#f9f9f7] py-20 px-4 font-sans text-gray-700">
+  <div class="max-w-4xl mx-auto text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-light text-gray-800 mb-4">
+      Let customers <span class="font-bold">speak for us</span>
+    </h2>
+    
+    <div class="flex flex-col items-center gap-2">
+      <div class="flex text-[#ffb400] text-2xl">
+        ★★★★★<span class="text-[#ffb400] relative overflow-hidden w-[12px]">★</span>
+      </div>
+      <div class="flex items-center gap-2 text-gray-500 text-sm">
+        <a href="#" class="underline hover:text-gray-800 transition-colors">from 48 reviews</a>
+        <div class="bg-[#4fb9a1] p-0.5 rounded-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper testimonialSwiper max-w-6xl mx-auto pb-12">
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide px-6">
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="flex text-[#ffb400] text-xl">★★★★★</div>
+          <h3 class="font-bold text-gray-800">100% recommended</h3>
+          <p class="text-gray-500 leading-relaxed italic">"this is world best coconut sweet"</p>
+          <div class="pt-4">
+            <p class="text-sm font-medium text-gray-400 mb-3">Khawaja Minhal Hassan</p>
+            <img src="https://placehold.co/60x40/6d7a5f/white?text=User" alt="User profile" class="rounded shadow-sm mx-auto object-cover">
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide px-6">
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="flex text-[#ffb400] text-xl">★★★★★</div>
+          <h3 class="font-bold text-gray-800">Awesome Taste and Quality</h3>
+          <p class="text-gray-500 leading-relaxed italic">"I had some doubts while ordering at such high..."</p>
+          <div class="pt-4">
+            <p class="text-sm font-medium text-gray-400 mb-3">Shahzad Ahsan</p>
+            <img src="https://placehold.co/60x40/6d7a5f/white?text=User" alt="User profile" class="rounded shadow-sm mx-auto object-cover">
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide px-6">
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="flex text-[#ffb400] text-xl">★★★★★</div>
+          <h3 class="font-bold text-gray-800">Lovely!</h3>
+          <p class="text-gray-500 leading-relaxed italic">"The patisa is so delicious"</p>
+          <div class="pt-4">
+            <p class="text-sm font-medium text-gray-400 mb-3">Maha Abdullah</p>
+            <img src="https://placehold.co/60x40/6d7a5f/white?text=User" alt="User profile" class="rounded shadow-sm mx-auto object-cover">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".testimonialSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
+</script>
+
+<style>
+  /* Customizing Swiper dots to match your green theme */
+  .swiper-pagination-bullet-active {
+    background: #6d7a5f !important;
+  }
+</style>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
