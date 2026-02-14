@@ -20,7 +20,7 @@ export default function Navbar() {
           <li><Link href="/" className="hover:text-green-600">Home</Link></li>
           <li><Link href="/products" className="hover:text-green-600">Products</Link></li>
           <li><Link href="/about" className="hover:text-green-600">About Us</Link></li>
-          <li><Link href="/contact" className="hover:text-green-600">Contact Us</Link></li>
+          <li><Link href="/contact-us" className="hover:text-green-600">Contact Us</Link></li>
         </ul>
 
         {/* Mobile Button */}
