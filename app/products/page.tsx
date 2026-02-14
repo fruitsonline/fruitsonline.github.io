@@ -35,9 +35,9 @@ export default function Products() {
               <div className="border-t border-gray-100"></div>
               <p className="text-gray-500">Free Home Delivery</p>
             </div>
-            <button className="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
+            <Link href={`/products/kinnows`} className="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
               Order Now
-            </button>
+            </Link>
           </div>
 
           <div className="relative border border-gray-800 pt-8 pb-12 px-6 flex flex-col items-center group">
@@ -55,9 +55,9 @@ export default function Products() {
               <div className="border-t border-gray-100"></div>
               <p className="text-gray-500">Free Home Delivery</p>
             </div>
-            <button className="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
+            <Link href={`/products/kinnows`} className="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
               Order Now
-            </button>
+            </Link>
           </div>
 
 
@@ -76,9 +76,9 @@ export default function Products() {
               <div className="border-t border-gray-100"></div>
               <p className="text-gray-500">Free Home Delivery</p>
             </div>
-            <button className="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
+            <Link href={`/products/kinnows`} className="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
               Order Now
-            </button>
+            </Link>
           </div>
         </div>
 
