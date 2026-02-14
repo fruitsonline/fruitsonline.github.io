@@ -1,10 +1,5 @@
 import Link from 'next/link'
 
-const products = [
-  { id: 1, name: 'Kinnow Box 10KG', price: 2200 },
-  { id: 2, name: 'Premium Mango Box', price: 3000 },
-]
-
 export default function Products() {
   return (
     <div>
@@ -35,7 +30,7 @@ export default function Products() {
               <div className="border-t border-gray-100"></div>
               <p className="text-gray-500">Free Home Delivery</p>
             </div>
-            <Link href={`/products/kinnows`} className="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
+            <Link href={`/products/kinnow-10kg`} className="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
               Order Now
             </Link>
           </div>
@@ -55,7 +50,7 @@ export default function Products() {
               <div className="border-t border-gray-100"></div>
               <p className="text-gray-500">Free Home Delivery</p>
             </div>
-            <Link href={`/products/kinnows`} className="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
+            <Link href={`/products/kinnow-5kg`} className="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
               Order Now
             </Link>
           </div>
@@ -76,7 +71,7 @@ export default function Products() {
               <div className="border-t border-gray-100"></div>
               <p className="text-gray-500">Free Home Delivery</p>
             </div>
-            <Link href={`/products/kinnows`} className="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
+            <Link href={`/products/kinnow-5kg`} className="absolute -bottom-6 bg-[#6d7a5f] hover:bg-[#5a664f] text-white font-bold py-4 px-10 text-xs tracking-widest transition-colors uppercase">
               Order Now
             </Link>
           </div>
