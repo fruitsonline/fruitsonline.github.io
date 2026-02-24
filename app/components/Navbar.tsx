@@ -12,7 +12,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <img src="/images/logo.png" height={20} style={{height: "40px"}} />
+          <img src="/images/logo.PNG" height={20} style={{height: "40px"}} />
         </div>
 
         {/* Desktop Menu */}
