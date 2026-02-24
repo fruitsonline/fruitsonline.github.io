@@ -55,7 +55,7 @@ export default function TestimonialSlider() {
           {/* VIEWPORT */}
           <div className="overflow-hidden">
             <div 
-              className="flex transition-transform duration-500 ease-in-out"
+              className="flex transition-transform duration-500 py-2 ease-in-out"
               style={{ 
                 transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)` 
               }}
@@ -68,7 +68,7 @@ export default function TestimonialSlider() {
                 >
                   <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100 flex flex-col h-full items-center text-center">
                     <div className="flex gap-1 mb-4 text-orange-400">
-                      {[...Array(5)].map((_, i) => <span className="text-[#ffb400] relative overflow-hidden w-[12px]">★</span>)}
+                      {[...Array(5)].map((_, i) => <span className="text-[#ffb400] relative overflow-hidden text-3xl w-[24px]">★</span>)}
                     </div>
                     <p className="text-gray-600 italic mb-6">"{t.text}"</p>
                     <p className="font-bold text-gray-800 mt-auto">{t.author}</p>

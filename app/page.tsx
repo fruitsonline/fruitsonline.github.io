@@ -140,7 +140,7 @@ export default function Home() {
 
           <div className="group cursor-pointer">
             <div className="relative overflow-hidden mb-5">
-              <img src="/images/kinnow-picking.png" style={{height:"270px", width: "405px"}} />
+              <img src="/images/kinnow-picking.png" className="h-[270px] w-[100%] m:w-[405px]" />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <div className="bg-white/20 p-4 rounded-full backdrop-blur-sm">
 

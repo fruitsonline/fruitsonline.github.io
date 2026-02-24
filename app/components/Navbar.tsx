@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <div className="sticky top-0 z-50 bg-white shadow-md">
-      <nav className="container max-w-7xl mx-auto relative py-5 flex justify-between items-center px-4">
+      <nav className="container max-w-7xl mx-auto relative py-5 flex justify-between items-center px-2 md:px-0">
 
         {/* Logo */}
         <div className="text-2xl font-bold">
