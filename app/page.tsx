@@ -40,11 +40,11 @@ export default function Home() {
 
           </div>
 
-          <div className="lg:w-1/2 flex justify-center">
+          <div className="lg:w-1/2 flex ">
             <img
-              src="https://images.unsplash.com/photo-1542838132-92c53300491e"
+             src="/images/oranges.png"
               alt="Fresh Vegetables Basket"
-              className="w-full max-w-xl object-contain"
+              className="w-full  object-contain"
             />
           </div>
 
@@ -67,7 +67,7 @@ export default function Home() {
               <div className="font-bold text-xl">2200 Rs</div>
             </div>
             <div className="h-48 flex items-center justify-center mb-6">
-              <img src="https://spadethemes.com/quickmart/wp-content/uploads/sites/6/2025/08/product-20-600x600.webp" style={{ height: "180px" }} alt="Monthly Box" className="object-contain" />
+              <img src="/images/kinnow-orange.png" style={{ height: "180px" }} alt="Monthly Box" className="object-contain" />
             </div>
             <div className="w-full text-center space-y-2 border-t border-gray-100 pt-6">
               <p className="text-gray-500">Export-Quality Sargodha Kinnows</p>
@@ -87,7 +87,7 @@ export default function Home() {
               <div className="font-bold text-xl">1500 Rs</div>
             </div>
             <div className="h-48 flex items-center justify-center mb-6">
-              <img src="https://spadethemes.com/quickmart/wp-content/uploads/sites/6/2025/08/product-20-600x600.webp" style={{ height: "180px" }} alt="Monthly Box" className="object-contain" />
+              <img src="/images/redblood-orange.png" style={{ height: "180px" }} alt="Monthly Box" className="object-contain" />
             </div>
             <div className="w-full text-center space-y-2 border-t border-gray-100 pt-6">
               <p className="text-gray-500">Export-Quality Sargodha Kinnows</p>
@@ -108,7 +108,7 @@ export default function Home() {
               <div className="font-bold text-xl">1500 Rs</div>
             </div>
             <div className="h-48 flex items-center justify-center mb-6">
-              <img src="https://spadethemes.com/quickmart/wp-content/uploads/sites/6/2025/08/product-20-600x600.webp" style={{ height: "180px" }} alt="Monthly Box" className="object-contain" />
+              <img src="/images/musammi.png" style={{ height: "180px" }} alt="Monthly Box" className="object-contain" />
             </div>
             <div className="w-full text-center space-y-2 border-t border-gray-100 pt-6">
               <p className="text-gray-500">Export-Quality Sargodha Kinnows</p>
