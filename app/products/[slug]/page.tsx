@@ -1,17 +1,19 @@
 
-const products = [
-  { slug: "kinnow-10kg", name: "Kinnow 10KG Box", price: 2200 },
-  { slug: "kinnow-5kg", name: "Kinnow 5KG Box" , price: 1500},
-]
-
+import { notFound } from 'next/navigation';
+import { PRODUCTS } from '@/data/content';
 export async function generateStaticParams() {
-  return products.map((product) => ({
+  return PRODUCTS.map((product) => ({
     slug: product.slug,
   }))
 }
 import ProductClient from "./ProductClient";
-export default function ProductDetail({ params }: { params: { slug: string } }) {
-    const product = products.find((p) => p.slug === params.slug)
-
-    return (<ProductClient />);
+export default async function ProductDetail({ params }: { params: Promise<{ slug: string }>  }) {
+  const resolvedParams = await params; 
+  const slug = resolvedParams.slug;  
+  const product = PRODUCTS.find((p) => p.slug === slug)
+  if(!product){
+    return notFound
+  }
+ 
+  return (<ProductClient product={product} />);
 }

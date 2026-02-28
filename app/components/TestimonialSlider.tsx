@@ -1,15 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 
-const testimonials = [
-  { id: 1, text: "Oranges were fresh, juicy and properly packed. No damaged fruit at all.", author: "Ali Raza – Lahore" },
-  { id: 2, text: "Very clean carton and consistent size. Taste was sweet, not market kinnow.", author: "Sana Malik – Islamabad" },
-  { id: 3, text: "Delivered on time and fruit was export-quality. Family loved it.", author: "Usman Khan – Karachi" },
-  { id: 4, text: "The quality is unmatched compared to local vendors. Highly recommended.", author: "Hamza Khan – Karachi" },
-  { id: 5, text: "Fast delivery to my doorstep in perfect condition. Great experience.", author: "Umer Khan – Karachi" },
-  { id: 6, text: "Best value for money if you are looking for premium grade fruit.", author: "Moeen Khan – Karachi" },
-];
-
+import { TESTIMONIALS } from '../../data/content' 
 export default function TestimonialSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsToShow, setItemsToShow] = useState(3);
@@ -39,11 +31,11 @@ export default function TestimonialSlider() {
 
   const nextSlide = () => {
     // Prevent sliding past the last available set
-    setCurrentIndex((prev) => (prev + 1) % (testimonials.length - itemsToShow + 1));
+    setCurrentIndex((prev) => (prev + 1) % (TESTIMONIALS.length - itemsToShow + 1));
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? testimonials.length - itemsToShow : prev - 1));
+    setCurrentIndex((prev) => (prev === 0 ? TESTIMONIALS.length - itemsToShow : prev - 1));
   };
 
   return (
@@ -60,7 +52,7 @@ export default function TestimonialSlider() {
                 transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)` 
               }}
             >
-              {testimonials.map((t) => (
+              {TESTIMONIALS.map((t) => (
                 <div 
                   key={t.id} 
                   className="flex-shrink-0 px-3"
@@ -77,24 +69,11 @@ export default function TestimonialSlider() {
               ))}
             </div>
           </div>
-
-          {/* Navigation Arrows */}
-          {/* <button 
-            onClick={prevSlide}
-            className="absolute -left-4 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg text-gray-400 hover:text-orange-500 z-10 hidden md:block"
-          >
-            l
-          </button>
-          <button 
-            onClick={nextSlide}
-            className="absolute -right-4 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg text-gray-400 hover:text-orange-500 z-10 hidden md:block"
-          >r
-          </button> */}
         </div>
 
         {/* DOTS */}
         <div className="flex justify-center gap-2 mt-8">
-          {[...Array(testimonials.length - itemsToShow + 1)].map((_, idx) => (
+          {[...Array(TESTIMONIALS.length - itemsToShow + 1)].map((_, idx) => (
             <button
               key={idx}
               onClick={() => setCurrentIndex(idx)}
